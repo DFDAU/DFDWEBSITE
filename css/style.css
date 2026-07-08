@@ -461,6 +461,115 @@ section {
 .thumb-5 { background: linear-gradient(135deg, #e0546b, #a12f47); }
 .thumb-6 { background: linear-gradient(135deg, #6f52c9, #3f2f8f); }
 
+/* ---------- Product detail (single product spotlight) ---------- */
+.product-detail {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+}
+
+.product-detail-visual {
+  background: linear-gradient(135deg, #d98a2e, #b05e15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  min-height: 320px;
+}
+
+.product-detail-visual svg {
+  width: 140px;
+  height: 140px;
+  color: #fff;
+}
+
+.product-detail-body {
+  padding: 44px 48px;
+}
+
+.product-detail-body h2 {
+  margin: 12px 0 16px;
+  color: var(--color-navy);
+  font-size: 1.7rem;
+}
+
+.product-detail-body > p {
+  color: var(--color-text-muted);
+  font-size: 1.02rem;
+  margin: 0 0 22px;
+}
+
+.prep-tips {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+}
+
+.prep-tips h3 {
+  margin: 0 0 6px;
+  color: var(--color-navy);
+  font-size: 1.05rem;
+}
+
+.prep-tips .cook-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.prep-tips ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prep-tips li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--color-text);
+  font-size: 0.94rem;
+}
+
+.prep-tips li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--color-primary);
+}
+
+.coming-soon-note {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail-visual {
+    padding: 36px;
+    min-height: 220px;
+  }
+
+  .product-detail-body {
+    padding: 32px 24px;
+  }
+}
+
 /* ---------- Process / Steps ---------- */
 .steps {
   counter-reset: step;
