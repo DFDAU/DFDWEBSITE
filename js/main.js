@@ -23,16 +23,47 @@ document.addEventListener("DOMContentLoaded", function () {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // Contact form (client-side only — no backend wired up yet)
+  // Contact form — submits to Formspree via fetch so we can show an inline status
   var form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var status = document.getElementById("form-status");
-      status.className = "form-status success";
-      status.textContent =
-        "Thanks! Your message has been prepared. Since this form isn't connected to an email service yet, please also reach us directly at info@directfooddistribution.com until that's set up.";
-      form.reset();
+      var submitBtn = form.querySelector("button[type='submit']");
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then(function (response) {
+          if (response.ok) {
+            status.className = "form-status success";
+            status.textContent = "Thanks! Your message has been sent — we'll get back to you shortly.";
+            form.reset();
+          } else {
+            return response.json().then(function (data) {
+              var detail =
+                data && data.errors
+                  ? data.errors.map(function (err) { return err.message; }).join(", ")
+                  : "Please try again or email us directly at info@directfooddistribution.com.";
+              status.className = "form-status error";
+              status.textContent = "Something went wrong: " + detail;
+            });
+          }
+        })
+        .catch(function () {
+          status.className = "form-status error";
+          status.textContent =
+            "Something went wrong sending your message. Please try again or email us directly at info@directfooddistribution.com.";
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send Message";
+        });
     });
   }
 });

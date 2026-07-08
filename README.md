@@ -24,10 +24,7 @@ Before launch, replace the placeholders sprinkled across the pages:
 
 ## Contact form
 
-The form on `contact.html` is client-side only — it validates and shows a confirmation message, but does **not** send an email yet. To make it functional, either:
-
-- Wire it to a form backend service (e.g. Formspree, Netlify Forms, Getform), or
-- Point it at a serverless function / backend endpoint that sends the message to `info@directfooddistribution.com`.
+The form on `contact.html` submits to Formspree (`https://formspree.io/f/xpqgelgq`), which forwards submissions to `info@directfooddistribution.com`. Formspree sends a one-time confirmation email on the first submission — that link must be clicked to activate the form.
 
 ## Deployment
 
