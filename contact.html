@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us | Direct Food Distribution</title>
+<meta name="description" content="Get in touch with Direct Food Distribution to ask about products, availability, and setting up delivery for your restaurant, retail, or institutional business." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C9 6 6 9 6 13a6 6 0 0 0 12 0c0-4-3-7-6-11z" fill="currentColor"/></svg>
+      </span>
+      <span>
+        Direct Food Distribution
+        <small>Wholesale &amp; Foodservice Supply</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products &amp; Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <span class="phone">(555) 010-2938</span>
+      <a href="contact.html" class="btn btn-outline-dark">Get in Touch</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Let's talk about supplying your business</h1>
+      <p>Have questions about our products, categories, or delivery area? Send us a message or reach out directly — we're happy to help.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <div>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5a2 2 0 0 1 2-2h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2h-1C9.6 19 5 14.4 5 8V5z"/></svg>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+15550102938">(555) 010-2938</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@directfooddistribution.com">info@directfooddistribution.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </div>
+              <div>
+                <h4>Distribution Center</h4>
+                <p>1200 Market Street, Suite 400<br />Your City, ST 00000</p>
+              </div>
+            </div>
+          </div>
+
+          <h4 style="color:var(--color-navy); margin: 0 0 12px;">Business Hours</h4>
+          <table class="hours-table">
+            <tr><td>Monday – Friday</td><td>7:00 AM – 5:00 PM</td></tr>
+            <tr><td>Saturday</td><td>8:00 AM – 1:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+
+          <div class="map-placeholder">
+            <div>
+              <strong>Service Area Map</strong><br />
+              Map coming soon — contact us to confirm delivery availability in your area.
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3 style="margin-top:0; color:var(--color-navy);">Send us a message</h3>
+          <p style="color:var(--color-text-muted); margin-top:-6px;">Fill out the form and our team will get back to you shortly.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="business">Business Name</label>
+                <input type="text" id="business" name="business" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="interest">I'm Interested In</label>
+              <select id="interest" name="interest">
+                <option value="">Select a category</option>
+                <option value="produce">Fresh Produce</option>
+                <option value="dairy">Dairy &amp; Refrigerated</option>
+                <option value="frozen">Frozen Foods</option>
+                <option value="dry-goods">Dry Goods &amp; Pantry</option>
+                <option value="beverages">Beverages</option>
+                <option value="specialty">Specialty &amp; Import</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your business and what you're looking for..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+            <p class="form-note">This form does not process online orders or payments — it's for inquiries only.</p>
+            <div id="form-status" class="form-status" role="status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C9 6 6 9 6 13a6 6 0 0 0 12 0c0-4-3-7-6-11z" fill="currentColor"/></svg>
+          </span>
+          <span>Direct Food Distribution</span>
+        </a>
+        <p>Reliable wholesale food distribution for restaurants, retailers, and institutions.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products &amp; Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Categories</h5>
+        <ul>
+          <li><a href="products.html#produce">Fresh Produce</a></li>
+          <li><a href="products.html#dairy">Dairy &amp; Refrigerated</a></li>
+          <li><a href="products.html#frozen">Frozen Foods</a></li>
+          <li><a href="products.html#dry-goods">Dry Goods &amp; Pantry</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>info@directfooddistribution.com</li>
+          <li>(555) 010-2938</li>
+          <li>Mon–Fri, 7am–5pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Direct Food Distribution. All rights reserved.</span>
+      <span>Built for restaurants, retailers &amp; institutions.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
