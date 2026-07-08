@@ -7,8 +7,8 @@
   --color-primary: #1b7a43;
   --color-primary-dark: #145c33;
   --color-primary-light: #e8f5ec;
-  --color-navy: #0f2942;
-  --color-navy-light: #1a3c58;
+  --color-navy: #0a1a31;
+  --color-navy-light: #17324f;
   --color-accent: #f5a623;
   --color-text: #23292d;
   --color-text-muted: #5b6570;
@@ -145,25 +145,10 @@ ul {
   letter-spacing: -0.01em;
 }
 
-.brand-mark {
-  width: 38px;
-  height: 38px;
-  border-radius: 9px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-navy));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  flex-shrink: 0;
-}
-
-.brand small {
+.brand-logo {
+  height: 44px;
+  width: auto;
   display: block;
-  font-weight: 500;
-  font-size: 0.68rem;
-  color: var(--color-text-muted);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 .main-nav ul {
@@ -852,6 +837,10 @@ section {
 .footer-brand .brand {
   color: #fff;
   margin-bottom: 14px;
+}
+
+.footer-brand .brand-logo {
+  height: 36px;
 }
 
 .footer-grid p {
