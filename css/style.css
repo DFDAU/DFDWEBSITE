@@ -115,13 +115,13 @@ ul {
 
 .btn-outline-dark {
   background: transparent;
-  color: var(--color-navy);
-  border-color: var(--color-navy);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .btn-outline-dark:hover {
-  background: var(--color-navy);
-  color: #fff;
+  background: var(--color-accent);
+  color: var(--color-navy);
 }
 
 /* ---------- Header ---------- */
@@ -129,9 +129,8 @@ ul {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: saturate(180%) blur(8px);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .site-header .container {
@@ -147,7 +146,7 @@ ul {
   gap: 10px;
   font-weight: 800;
   font-size: 1.15rem;
-  color: var(--color-navy);
+  color: #fff;
   letter-spacing: -0.01em;
 }
 
@@ -164,7 +163,7 @@ ul {
 }
 
 .main-nav a {
-  color: var(--color-navy);
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 600;
   font-size: 0.96rem;
   padding: 6px 2px;
@@ -174,8 +173,8 @@ ul {
 
 .main-nav a:hover,
 .main-nav a[aria-current="page"] {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .header-cta {
@@ -187,7 +186,7 @@ ul {
 .header-cta .phone {
   display: none;
   font-weight: 700;
-  color: var(--color-navy);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.94rem;
 }
 
@@ -209,7 +208,7 @@ ul {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--color-navy);
+  background: #fff;
   margin: 5px 0;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -313,6 +312,11 @@ ul {
   line-height: 1.12;
   margin: 0 0 20px;
   letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--color-accent);
+  font-style: italic;
 }
 
 .hero p.lead {
@@ -1134,6 +1138,7 @@ section {
     width: 100%;
     padding: 14px 4px;
     border-bottom: 1px solid var(--color-border);
+    color: var(--color-navy);
   }
 
   .nav-toggle {
