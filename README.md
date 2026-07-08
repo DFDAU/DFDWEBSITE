@@ -19,7 +19,6 @@ No build step or dependencies — plain HTML/CSS/JS. Open `index.html` directly 
 
 Before launch, replace the placeholders sprinkled across the pages:
 
-- Phone number: `(555) 010-2938`
 - Address: `1200 Market Street, Suite 400, Your City, ST 00000`
 - Business hours (contact.html)
 - Stats on the homepage/about page (500+ businesses, 98% on-time, etc.)
